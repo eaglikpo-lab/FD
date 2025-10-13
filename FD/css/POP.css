@@ -1,0 +1,250 @@
+/* Section container */
+.popular-items {
+    /*position: relative;*/
+    /*background: rgb(195, 221, 243);
+   background-color: antiquewhite;*/
+   /*padding: 0vw 11.48vw;px 221px;*/
+    width: 100%;
+}
+
+.popular-items-container {
+   display: flex;
+    /*display: grid;*/
+    /*padding: 0% 11.48vw; /*left=221px;*/
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+       
+}
+
+.popular-items-container .title-cards {
+  margin: 0vw 11.48vw;/*0px 220px*/
+    display: flex;
+    flex-direction: column;
+    gap: 4.47vw; /*88px*/
+    align-items: center;
+    width: 76.97%;/*1481;*/
+}
+
+/* Title */
+.title-cards.title{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.23vw; /*43px */
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 112.01%;
+    color: #212121;
+}
+
+
+/* Cards layout */
+.cards {
+    display: flex;
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14.73vw, 1fr));*/
+    gap: .83vw;/*16px*/
+    width: 100%;
+    justify-content: center;
+    /*overflow: hidden;/* coupe ce qui dépasse */
+}
+
+/* Each card */
+.carte {
+    overflow: hidden;/* coupe ce qui dépasse */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*transition: transform 0.2s ease;*/
+    justify-content: center;
+    gap: .83vw; /*16px*/
+    width: 14.72vw; /*283.3px*/
+  /*  height: auto;*/
+}
+
+.carte:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Image */
+.image-title {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: .83vw;/*16px*/
+    width: 100%;
+}
+
+.img-cheese img {
+    border-radius: .83vw;/*16px*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/* l’image remplit le div sans déborder */
+    display: block;/* supprime les espaces parasites */
+    border-radius: .83vw;/* 16px */
+}
+
+.img-cheese {
+    border-radius: .83vw;/*16px*/
+    overflow: hidden; /* empêche l’image de dépasser */
+    
+}
+
+/* Name + Location + Price */
+.name-location-price {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: .83vw; /*16px*/
+}
+
+.name-location {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: .83vw;/*16px*/
+    font-size: 1.14vw; /*22px*/
+}
+
+.name  {
+    color: #424242;
+    font-size: 1.14vw; /*22px*/
+    font-weight: 700;
+}
+
+.Location {
+    font-family: "Font Awesome 5 Free",sans-serif;
+    display: flex;
+    justify-content: start;
+    gap: .41vw;/*8px*/
+    font-weight: 400;
+    font-size: 1.14vw;/*22px*/
+    color:#FFB30E;
+    line-height: 120%;
+    align-items: center;
+}
+
+.Location .icon img{
+    width: .72vw;/*14px*/
+    height: .72vw;
+    display: block;
+}
+
+.price {
+    font-size: 1.14vw;/*22px*/
+    font-weight: 700;
+    line-height: 200%;
+}
+
+/* Order button */
+
+.carte .button {width: 100%;
+height: auto;}
+
+.button button {
+    display: flex;
+    font-family: "Source Sans Pro", sans-serif;
+    background:#F17228;
+    color: #fff;
+    /*font-size: .93vw;/*18px*/
+    font-weight: 700;
+    padding: 1.09vw 2.7vw;/*21px 48px*/
+    border: none;
+    border-radius: .41vw;/*8px*/
+    cursor: pointer;
+    line-height: 100%;
+    width: 100%;
+   /* width: 283.3999938964844;*/
+    gap: .51vw; /*10px*/
+    text-align: center;
+    font-size: clamp(.2rem, .93vw, 1rem);
+       
+}
+
+.button button:hover {
+    background: #e56f00;
+}
+
+/* Slider arrows */
+.popular-items .popslider-button {
+    position: absolute; /*top: 50%;*/
+    margin-top: 13vw;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;/* arrows only clickable */
+    margin-left: 2.5%;
+    width: 100%;
+    max-width: 85%; /*Uniquement ici, garde 91.1% dans le dossier "popular itemss lui mm".*/
+    z-index: 10;
+}
+
+.poparrow button {
+    pointer-events: all;
+    background: #ffb84d;
+    border: none;
+    border-radius: 50%;
+   /* width: 3.95vw;
+    height: 3.95vw;
+    font-size: 1.14vw;*/
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+
+    width: clamp(20px, 3.95vw, 60px);
+    height: clamp(20px, 3.95vw, 60px);
+    font-size: clamp(10px, 1.14vw, 18px);
+}
+
+.poparrow button:hover {
+    background: #ffa31a;
+}
+
+.popright {
+    right: 5.1vw;
+}
+
+.popleft {
+    left: 5.1vw;
+}
+
+
+
+@media (max-width: 1024px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 0 0 14.7vw; /* base ~283px, mais flexible */
+        gap: 10px;
+    }
+
+    .carte {
+        flex: 1 1 35%;/* 2 cartes par ligne */
+        max-width: 35%;
+    }
+
+    .popular-items .popslider-button {
+        transform: translateY(800%);
+    }
+}
+
+@media (max-width: 600px) {
+    .carte {
+        flex: 1 1 40%;/* 1 carte par ligne */
+        max-width: 50%;
+    }
+
+    .popular-items .popslider-button {
+        transform: translateY(1020%);
+    }
+
+    .name-location .name,
+    .name-location .Location,
+    .price,
+    .button  button{
+        font-size: 10px;
+    }
+}

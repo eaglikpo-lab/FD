@@ -1,0 +1,487 @@
+/* === RESET DE BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+}
+
+/* === CONTAINER GLOBAL === */
+.page-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  margin: 0 auto;/* centre horizontalement */
+  padding: 0 20px;/* espace intérieur gauche/droite (utile en mobile) */
+  box-sizing: border-box; /* inclure padding dans la largeur */
+}
+
+/* Espacement entre sections */
+.page-container section {
+  margin-bottom: 4.16vw; /* gap de Figma */
+}
+
+/* === TOP NAV === */
+.top-nav-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 4.16vw;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.62vw; /*12 px*/
+  padding: 0.83vw 11.43vw;/*16px 220px*/
+}
+
+/* Logo */
+.logofoodwagon {
+  display: flex;
+  align-items: center;
+  gap: 0.59vw;
+  height: auto;
+   
+}
+
+.logofoodwagon .logo {
+  width: 1.45vw;/*28px*/
+  height: 100%;/*29.976593017578125px*/
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.logofoodwagon .frame36{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+     /* width: 14.03vw;*/
+}
+
+.logofoodwagon .food {
+  color:#F17228; /* orange */
+}
+
+.logo .wagon {
+  color: #FFB30E; /* noir/gris */
+}
+
+/* Deliver Address */
+.top-nav .deliver-address {
+  display: flex;
+  align-items: center;
+  gap: 0.62vw;
+  font-size: 0.93vw;
+  height: 100%;
+}
+
+.deliver-address p {
+  font-weight: 600;
+}
+
+
+.frame61 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.935vw;
+  line-height: 140%;
+}
+
+.frame61 img {
+  width: 0.72vw;
+  height: auto;
+
+}
+
+.frame63 {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.935vw;
+  font-weight: 700;
+  gap: 0.46vw;
+}
+
+.frame63 .current {
+  font-weight: 400;
+}
+
+/* Search + Login */
+.top-nav .search-login-button {
+  display: flex;
+  gap: 1.55vw; /*30px*/
+  align-items: center;
+  width: auto;
+}
+
+.frame39,
+.frame29 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.935vw; /*18px*/
+  font-weight: 700;
+}
+
+.frame39 {
+    background: #FFFFFF;
+    color: #424242;
+    gap: 0.41vw; /*8px*/
+}
+
+.frame39 .icon-search img{
+  width: 0.93vw; /*18px*/
+  height: auto;
+}
+
+.frame29 {
+  border: none;
+  background: #fff;
+  color: #FF7A00;
+  padding: .72vw 1.24vw; /*14px 24px*/
+  border-radius: 0.42vw; /*8px;*/
+  gap: .51vw; /*10px*/
+  box-shadow: 0px 20px 40px 0px #FFAE004A;
+}
+
+.frame29 .icon-search img {
+  width: 0.93vw;/*18px*/
+  height: auto;
+}
+
+
+/* === HERO SECTION === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 6.86vw 11.43vw 0vw 11.43vw; /*132px 220px*/
+  height: 31.73vw; /*132px */
+  background: linear-gradient(90deg, #FFD54F, #FF9800);
+}
+
+.background-jaune {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*padding: 6.86vw 11.43vw 0vw 11.43vw; /*132px 220px*/
+}
+
+.background-jaune .title-order-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.66vw; /*32px;*/
+    height: 18.47vw; /*355.45px*/
+}
+
+
+.title-order-card .title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: .77vw; /*15px;*/
+  border-radius: .83vw; /*16px;*/
+}
+
+.title h1 {
+  font-size: 4.57vw; /*88px*/
+  line-height: 100%;
+  font-weight: 700;
+  color: #fff;
+}
+
+.title p {
+  font-size: 1.14vw; /*22px;*/
+  color: #504F4F;
+  font-weight: 400;
+}
+
+/* Order Card */
+.title-order-card .order-card {
+  background: #fff;
+  border-radius: .83vw; /*16px;*/
+  width: 44.49vw;/*856px;*/
+  box-shadow: 0px 20px 40px 0px #FFAE004A;
+  font-size: .93vw;/*18px;*/;
+}
+
+.order-card .Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: .41vw; /*8px;*/
+  padding: 1.14vw; /*24px;*/
+}
+
+.Top .tab {
+  display: flex;
+  gap: 0.51vw;/*10px*/
+}
+
+.tab .tab1, .tab .tab2{
+  display: flex;
+  border: 1px solid #eee;
+  padding: .519vw 1.24vw;/*10px 24px;*/
+  gap: .51vw; /*10px*/
+  cursor: pointer;
+  line-height: 100%;
+  align-items: center;
+}
+
+.tab1 span, .tab2 span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: .93vw; /*18px;*/
+
+}
+
+.tab1 {
+  background: #F172281A;
+  color: #F17228;
+  border-radius: .41vw;/*8px;*/
+  width: 7.69vw; /*148px;*/
+}
+
+.tab1 img {
+  width: 1.19vw; /*23px;*/
+  height: auto;
+ 
+}
+
+.tab2 {
+  color: #757575;
+  width: 6.7vw; /*129px;*/
+
+}
+
+.tab2 img {
+  width: .83vw; /*16px;*/
+  height: auto;
+}
+
+/* Bottom */
+.order-card .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .51vw;  /*10px;*/
+  padding: 1.24vw; /*24px;*/
+}
+
+.bottom .text-field-button {
+  display: flex;
+  align-items: center;
+  gap: .83vw; /*16px;*/
+  width: 41.99vw;/*808px*/
+}
+
+.text-field-button .text-field {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: .62vw;/*12px;*/
+  border: 1px solid #ddd;
+  border-radius:.41vw;/*8px;*/
+  background-color: #F5F5F5;
+  padding-top: .36vw;/*7px;*/
+  padding-bottom: .41vw;/*8px;*/
+  padding-left:.83vw ;/*16px;*/
+  width: 30.82vw; /* 593px*/
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  font-size: .93vw;/*18px;*/;
+}
+
+.text-field img {
+  width: .93vw; /*18px;*/;
+  height: auto;
+}
+
+.text-field input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.text-field-button .find-food-btn {
+  display: flex;
+  background: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
+  color: #fff;
+  padding: 1.09vw 2.49vw;/*21px 48px;*/
+  border: none;
+  border-radius: .41vw; /*8px;*/
+  font-weight: 700;
+  cursor: pointer;
+  font-size: .93vw;/*18px;*/;
+  line-height: 100%;
+  gap: .51vw; /*10px*/
+}
+
+.find-food-btn img {
+  width: .72vw;/*16px;*/
+  height: auto;
+}
+
+.background-jaune .noodle {
+  width: 31.39vw; /*604px;*/
+  height: auto;    
+}
+
+.noodle img {
+  position: relative;
+  top: 2.5vw;/*50px;*/
+  left: 20.73%;/*1098px;*/
+  width:22.83vw; /*497px;*/
+  height: auto;
+}
+
+
+/* Media queries */
+@media (max-width: 1024px) {
+
+  /*Responsivité tablette*/
+  .page-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .page-container section {
+    margin-bottom: 50px;
+    /* on réduit le gap */
+  }
+
+  .top-nav {
+    padding: 12px 5%;
+  }
+
+
+  
+  .top-nav-header {
+    margin-bottom: 7.5vw;
+  }
+  
+  .header {
+    height: 31.5vw;
+  }
+
+  .tab .tab1, .tab .tab2 {
+  width: 9.69vw;/*148px;*/
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  /*Responsivité mobile*/
+  .page-container {
+    padding: 0 10px;
+  }
+
+  .page-container section {
+    margin-bottom: 30px;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+    .top-nav-header {
+      margin-bottom: 7.5vw;
+    }
+  
+    .header {
+      height: 35.5vw;
+    }
+
+  .top-nav .deliver-address,
+  .frame29, .frame39, .frame63,
+  .title p, .tab1 span,
+  .tab2 span {
+    font-size: 10px;
+  }
+    
+  .text-field img {
+    width: 1.5vw;
+  }
+
+    .noodle img {
+      top: 5.4vw;
+      left: 17.9%;
+      width: 20.83vw;
+      height: auto;
+    }
+
+    .deliver-address {
+      justify-content: center;
+      width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+  .header {
+      height: 47vw;
+      padding: 0vw;
+  }
+
+  .title-order-card {
+    margin-top: 4vw;
+    margin-left: 8vw;
+  }
+
+  .order-card {
+    width: 54vw;
+  }
+
+  .tab .tab1,
+  .tab .tab2 {
+       width: 18vw;/*148px;*/
+       /*height: 10%;*/
+     }
+
+  .tab1 img {
+    width: 3vw;
+  }
+
+  .tab2 img {width: 2vw;}
+
+  .background-jaune .noodle {
+    padding-top: 20%;
+    width: 52.39vw;
+  }
+
+  .text-field input {
+    font-size: 8px;
+  }
+
+  .logofoodwagon .logo {
+    width: 5vw;
+    height: auto;
+  }
+
+  .frame61 img, .frame39 .icon-search img,
+  .frame29 .icon-search img {
+    width: 2.6vw;
+    height: auto;
+  }
+
+  .find-food-btn img {
+    width: 2.5vw;
+    height: auto;
+  }
+}

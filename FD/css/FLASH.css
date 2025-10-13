@@ -1,0 +1,119 @@
+/*section flash deal container DU FOLDER FOODWAGON*/
+
+.flash-deal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.83vw;/*16px*/
+    margin: 0vw 11.43vw;/*16px 220px*/
+}
+
+.flash-deal-container .flashcard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.66vw; /*32px*/
+    width: 18.55vw;/*356.91px*/
+}
+
+.flashcard .picture {
+    width: 100%;/*356.91px=15vw*/
+    height: auto;
+}
+
+
+.picture img {
+    width: 100%;/*356.91px=15vw*/
+    height: 100%;
+}
+
+
+.discount {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: #FFB30E;
+    border-top-right-radius: 1.66vw;
+    /*32px;*/
+    /*max-width: 20%;
+    width: 140;
+    height: 83;*/
+}
+
+
+.discount .number {
+    font-weight: 700;
+    font-size: clamp(32px, 2.53vw, 68px);/*68px*/
+    line-height: 106%;
+    color: #FFFFFF;
+}
+
+.discount .per-symbol {
+    font-weight: 700;
+    font-size: clamp(13px, 1.82vw, 35px);/*68px*/
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+
+.flash-deal-container .flashtext-badge {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.73vw;/*14px*/
+    font-size: clamp(10px, 1.14vw, 22px);/*22px;*/
+    align-content: flex-start;
+
+}
+
+.flashtext-badge .grey {
+    color: #424242;
+    line-height: 120%;
+    font-weight: 700;
+    padding-left: 0%;
+
+}
+
+.flashtext-badge .six-day {
+    border-radius: .41vw;
+    background-color: #F1722833;
+    color: #F17228;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 0.42vw 0.83vw;
+}
+
+
+@media (max-width: 600px) {
+    .flash-deal-container {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: .83vw;/*16px*/
+    }
+
+    .flashcard {
+        flex: 1 1 100%;/* 1 carte par ligne */
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+
+    /*Responsivité tablette*/
+    .flash-deal-container {
+        flex-wrap: wrap;
+        align-items: center;
+        flex: 0 0 18.55vw;/* base ~365.91px, mais flexible */
+        gap: 2.9vw;
+    }
+
+    .flashcard {
+        flex: 1 1 45%;/* 2 cartes par ligne */
+        max-width: 55%;
+    }
+
+}

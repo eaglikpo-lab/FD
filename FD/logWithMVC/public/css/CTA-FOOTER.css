@@ -1,0 +1,465 @@
+.CTA-footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.CTA-footer-container .CTA{
+    display: flex;
+    /*background-image: url("C:/Users/HP New/Downloads/bg.png");*/
+    width: 100%;
+    height: 20.79vw; /*400px;*/
+    align-items: center;
+
+}
+
+.CTA .BG{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.BG img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.CTA .text-button {
+    position: absolute;
+    width: 37.83vw; /*728px*/
+    height: 12.16vw; /*234*/
+     /*top: 4.72%; /*91px*/
+    left:30.97%; /*596px;*/
+    border-radius: .41vw; /*8px;*/
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+}
+
+.text-button h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.96vw; /*57px*/ 
+    line-height: 97%;
+    color: white;
+}
+
+.proc-button {
+    display: flex;
+    background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
+    color: #fff;
+    padding: 1.09vw 2.49vw;/*21px 48px;*/
+    border: none;
+    border-radius: .41vw;/*8px;*/
+    font-weight: 900;
+    cursor: pointer;
+    font-size: .93vw;/*18px;*/
+    line-height: 100%;
+    gap: .51vw; /*10px*/
+    text-align: center;
+}
+
+.proc-button .chevron {
+    font-family: "Font Awesome 5 Free",sans-serif;
+    font-size: .83vw; /*16px*/;
+}
+
+
+.CTA-footer-container .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.14vw;
+    width: 100%;
+    height: auto;/* 48.64vw; /*936px*/;
+    background: #212121;
+}
+
+.OurTopCities {
+    display: flex;
+    flex-direction: column;
+    width: 76.92vw; /*1480px*/
+    /*height: 12.26vw; /*236px*/
+    margin-top: 5.14vw; /*99px;*/
+    left: 11.48vw; /*221px*/
+    gap: 2.07vw; /*40px*/
+}
+
+.OurTopCities, .menu h3 {
+        font-weight: 700;
+        font-size: 1.14vw; /*22px;*/
+        line-height: 120%;
+        color: white;
+}
+
+.OurTopCities .items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.item1 {
+    display: flex;
+    flex-direction: column;
+    /*width: 5.97vw; /*115px*/
+    gap: .83vw; /*16px*/
+}
+
+
+.item1 span {
+        font-weight: 400;
+        font-size: .93vw; /*18px*/
+        line-height: 100%;
+        color: #F5F5F5;
+}
+
+.MenuSubscriptionRights {
+    display: flex;
+    width:76.92vw; /*1480px*/
+    /*height: 433;*/
+    top:22.55vw; /* 434px;*/
+    left: 11.48vw; /*221px*/
+    gap: 3.27vw; /*63px*/
+    border-top: 2px solid #424242;    
+    padding-top: 3.27vw; /*63px*/  
+}
+
+.MenuSubscriptionRights .MenuSubscription {
+    display: flex;
+    width: 100%;
+    /*height: 254;*/
+    justify-content: space-between;
+}
+
+.MenuSubscription .menus {
+    width: 31.54vw; /*607px*/
+   /* height: 9.66vw; /*186px*/
+    justify-content: space-between;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2.07vw; /*40px*/
+    /*width: 93;
+    height: 100%;*/
+}
+
+.MenuSubscription .FollowSubscription {
+    display: flex;
+    flex-direction: column;
+    /*width: 25.10vw; /*483px*/
+    /*height: 254;*/
+    gap: 2.23vw; /*43px*/
+    align-items: center;
+}
+
+.FollowSubscription .follow-us {
+    display: flex;
+    flex-direction: column;
+    /*width: 5.24vw; /*101px*/
+   /* height: 86;*/
+    gap: 2.07vw; /*40px*/
+    align-items: flex-start;
+}
+
+.follow-us span {
+    width: 100%;
+    font-weight: 400;
+    font-size: .93vw; /*18px*/
+    line-height: 100%;
+    color: #F5F5F5;
+}
+
+.follow-us .icons {
+    display: flex;
+    width: 100%;
+    /*height: 24;*/
+    gap: .83vw; /*16px*/
+    opacity: 0.31;
+}
+
+.icons .icon {
+    width: 1.24vw;/*24*/
+    height: 1.24vw; /*24*/
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.FollowSubscription .subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 2.07vw;/*40px*/
+    align-items: center;
+}
+
+.subscription p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: .93vw;/*18px*/
+    line-height: 140%;
+    color: #BBBBBB;
+}
+
+.subscription .text-field-button {
+    display: flex;
+    gap: .83vw;/*16px*/
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+.text-field {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: .51vw;/*10px;*/
+    border-radius: .41vw;/*8px;*/
+    padding-top: .36vw;/*7px;*/
+    padding-bottom: .41vw;/*8px;*/
+    padding-left: .83vw;/*16px;*/
+    width: 17.35vw;/* 334px*/
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: .93vw; /*18px;*/
+
+}
+
+.text-field img {
+    width: 1.24vw;/*24px;*/
+    height: auto;
+}
+
+.text-field input {
+    width: 100%;
+    color: #ADADAD;;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.text-field-button .button {
+    display: flex;
+    color: #fff;
+    padding: 1.09vw 1.24vw;/*21px 24px;*/
+    border: none;
+    border-radius: .41vw;/*8px;*/
+    font-weight: 700;
+    cursor: pointer;
+    font-size: .93vw;/*18px;*/
+    line-height: 100%;
+    gap: .51vw;/*10px*/
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+}
+
+.HR-rights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 76.92vw;
+    border-top: 2px solid #424242;
+    margin-bottom: 3.27vw; /*63px*/
+    padding-top: .2rem;
+}
+
+.HR-rights .Rights {
+    display: flex;
+    justify-content: space-between;
+/* width: 16.58vw; /*319*/
+    /*height: 18;*/
+    gap:.51vw;/* 10px*/
+}
+
+.Rights .all, .company, .made, .theme {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    font-size: .77vw; /*15px*/
+    line-height: 120%;
+    color: #F5F5F5;
+}
+
+.Rights .copy, .heart {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 400;
+    font-size: .83vw;/*16px*/
+    line-height: 100%;
+}
+
+.Rights .company {
+    font-weight: 700;
+}
+
+.HR-rights .made-by {
+    display: flex;
+    justify-content: space-between;
+    gap: .41vw;/* 8px*/
+}
+
+ .heart {
+    font-weight: 900;
+    font-size: .67vw;/*13px*/
+    color: #e29595;
+}
+
+.made-by .theme {
+    font-weight: 700;
+}
+
+
+/* Responsive tablette et mobile */
+@media (max-width: 600px) {
+
+    .CTA-footer-container .CTA {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 20.79vw;
+        /*400px;*/
+        align-items: center;
+    }
+
+    /* CTA */
+    .CTA .text-button {
+        position: absolute;
+        width: 80%;
+        /*margin: auto;*/
+        margin-top: 3%;
+        left: auto;
+        text-align: center;
+    }
+
+    .text-button h2 {
+        font-size: 5vw; /* plus grand sur mobile */
+    }
+
+    .proc-button {
+        width: 50%;
+        justify-content: center;
+        font-size: 2vw;
+        padding: 6px 12px;
+    }
+
+    /* Footer */
+    .OurTopCities {
+        margin: auto;
+       /* width: 50%;*/
+        width: 80%;
+       /* align-items: center;*/
+       gap: 3.5vw;
+    }
+
+    .OurTopCities h3,  .menu h3, .follow-us span{
+        font-size: 4.5vw;
+    }
+
+    .OurTopCities .items {
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        /*justify-content: space-around;*/
+        justify-content: normal;
+    }
+
+    .OurTopCities .item1 {
+        /*align-items: center;*/
+        /*width: 100%;/* 2 colonnes max */
+        width: 30%;/* 2 colonnes max */
+    }
+
+    .item1 span {
+        font-size: 10px;
+    }
+
+    .MenuSubscriptionRights {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 40px;
+    }
+
+    .MenuSubscriptionRights .MenuSubscription {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .MenuSubscription .menus {
+        justify-content: space-around;
+        /*flex-wrap: wrap;*/
+        /*flex-direction: column;*/
+        width: 90%;
+        gap: 20px;
+    }
+
+    .MenuSubscription .menu {
+        width: 40%;
+    }
+
+  
+
+    .FollowSubscription {
+        align-items: center;
+        width: 100%;
+    }
+
+    .follow-us .icons {
+        gap: 5vw;
+    }
+
+    .icons .icon {
+        width: 4vw;
+        height: auto;
+    }
+
+    .subscription .text-field-button {
+       /* flex-direction: column;*/
+        gap: 10px;
+        align-items: center;
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .subscription p, .button span {
+        font-size: 10px;
+    }
+
+    .subscription .text-field,
+    .subscription {
+        width: 70%;
+       /* align-items: center;*/
+    }
+
+    .text-field img {
+        width: 2.5vw;
+    }
+
+    /* HR + Rights */
+    .HR-rights {
+        /*flex-direction: column;*/
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Rights .all,
+    .Rights .copy,
+    .Rights .company,
+    .made-by .made,
+    .made-by .heart, 
+    .made-by .theme {
+        font-size: 6px;
+    }
+
+
+   
+}

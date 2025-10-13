@@ -1,0 +1,208 @@
+.featured-restaurant-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.57vw; /*88px*/
+}
+
+.featured-restaurant-container .title {
+    text-align: center;
+    font-size: 2.23vw;/*43px */
+    font-weight: 700;
+    line-height: 112.01%;
+    color: #212121;
+}
+
+.featured-restaurant-container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 18.55vw);/* chaque colonne = 357px; place autant de colonnes de 357px que possible dans l’espace disponible.*/
+    grid-auto-rows: 24.06vw;/* chaque ligne = 463px; fixe la hauteur de chaque ligne.*/
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    gap: 3.32vw .83vw; /*64px 16px*/
+    justify-content: center;
+}
+
+.cards .CARTE {
+   /* background-color: azure;*/
+    display: flex;
+    flex-direction: column;
+    gap: 1.24vw; /*24px;*/
+    border-radius: .83vw;/*16px;*/
+    align-items: flex-start;
+}
+
+.CARTE .food-photo{
+    border-radius: .83vw;/*16px;*/
+    /*height: 15.64vw; /*301px*/
+}
+
+.food-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: .83vw; /*16px;*/
+}
+
+.CARTE .image-name-review-badge {
+    display: flex;
+    flex-direction: column;
+    /*width: 15.9vw; /*197px*/
+    /*height: 138;*/
+    gap: 1.66vw; /*32px;*/
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 1.14vw;/*22px;*/
+}
+
+.image-name-review-badge .badge-orange{
+    height: auto;/*42px*/ 
+    border-radius: .83vw;/*16px;*/
+    padding:.41vw .83vw; /* 8px 16px*/
+    background: #F1722833;
+    text-align: center;
+    color:  #F17228;
+    line-height: 120%;
+}
+
+.image-name-review-badge .badge-vert {
+    height: auto;/*42px*/
+    border-radius: .83vw;/*16px;*/
+    padding: .41vw .83vw;/* 8px 16px*/
+    background: #79B93C33;
+    text-align: center;
+    color: #79B93C;
+    line-height: 120%;
+}
+
+.image-name-review-badge .image-name-review {
+    display: flex;
+    gap: 1.24vw; /*24px*/
+    /*width: 10.18vw; /*196px*/
+    height: 3.32vw; /*64px*/
+}
+
+.image-name-review .logo {
+    width: 3.32vw; /*64px*/
+    height: 100%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.image-name-review .name-review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .2vw; /*4px*/
+}
+
+.name-review .named {
+    width: 100%;
+    height: 1.35vw; /*26px*/
+    line-height: 120%;
+    color: #424242;
+}
+
+.name-review .review{
+    display: flex;
+    flex-direction: row;
+    gap: .41vw; /*8px*/
+    width: 2.85vw; /*55px*/
+    justify-content:center;
+    height: 1.35vw;/*26px*/
+}
+
+.review .icon {
+    width: 1.29vw; /*25px*/
+    height: 1.19vw;/*23px*/
+}
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+.review .text{
+    text-align: center;
+    font-weight: 400;
+    line-height: 120%;
+    color: #FFB30E;
+    width: 1.14vw; /*22px*/
+    height: 1.35vw;/*26px*/
+}
+.featured-restaurant-container .button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: .51vw; /*10px;*/
+    border-radius: .72vw;/*14px;*/
+    padding: 1.09vw 2.129vw;/*21px 48px*/
+    background: linear-gradient(97.86deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+}
+
+.button .text {
+    font-weight: 700;
+        font-size: .93vw;/*18px;*/
+        line-height: 100%;
+        text-align: center;
+        color: #FFFFFF;
+}
+
+
+/* Desktop : déjà bon (4 colonnes), on garde ton code existant */
+
+
+
+/* Mobile (en dessous de 768px) */
+@media (max-width: 1024px) {
+    .featured-restaurant-container .cards {
+        /*grid-template-columns: 1fr; /* 1 carte par ligne */
+        /*gap: 8vw;*/
+        grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne */
+        grid-auto-rows: auto;
+        gap: 5.32vw 1.83vw;
+        width: 76%;
+    }
+
+    .cards .CARTE {
+        width: 100%; /* occupe la largeur de la colonne */
+        height: 135%;
+        /*align-items: center;*/
+    }
+
+    .name-review {
+        width: 100%;
+    }
+
+    .food-photo {
+        object-fit: contain;
+        height: 56%;
+    }
+    
+    .food-photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-restaurant-container .title {
+        font-size: 5vw;
+    }
+
+    .CARTE .image-name-review-badge {
+        font-size: 10px;
+        gap: 2.5vw;
+    }
+
+    .image-name-review .name-review {
+        gap: 1vw;
+    }
+
+    .featured-restaurant-container .button {
+        width: 30%;
+    }
+
+    .button .text {
+        font-size: 10px;
+    }
+}

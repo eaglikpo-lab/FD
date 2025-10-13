@@ -1,0 +1,118 @@
+/* Section container */
+/*.how-it-works {
+    padding: 4.15vw 0vw; 
+    background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+    text-align: center;
+
+}*/
+
+.how-it-works .container {
+    padding: 4.15% 0%; /* 80px / 1920 */
+    background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.69vw;/* 71px */
+    width: 100%;
+
+}
+
+/* Title */
+.container .how-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+   /* font-size: clamp(20px, 2.08vw, 43px); /* 40px */
+    color: #F17228;
+    font-size: 2.23vw; /* 43px */
+}
+
+/* Features container */
+.container .features {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 71.93%;
+    align-items: center;
+    gap: 1.66vw; /* 32px */
+    
+}
+
+/* Each feature */
+.features .feature {
+    display: flex;
+    flex-direction: column;
+    /*width: 15.95vw;*/
+    /*gap: 2.13vw;*/
+    /*min-width: 200px;
+    max-width: 16%;*/
+    align-items: center;
+    font-size: .93vw;/*18%*/
+    color: #9E9E9E;
+}
+
+.feature .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.51vw; /*10%*/
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+/* Icon */
+.feature .icon {
+    display: flex;
+    justify-content: center;
+    /*width: 3.75vw; /*72.15px*/
+    height: 8.66vw; /* ~112px */
+   /* gap: 2.13vw; /*41px;*/
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Title of feature */
+.feature .feature-title {
+    font-weight: 700;
+    color: #434343;
+    line-height: 120%;
+    align-content: center;
+    font-size: clamp(10px, 1.14vw, 22px); /* 22px */
+}
+
+/* Body */
+.feature .feature-body {
+    font-size: clamp(9px, 0.94vw, 18px);/* 18px */
+    color: #9E9E9E;
+    line-height: 1.4;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .features {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 0 0 19.07vw; /* base ~367px, mais flexible */
+        gap: 3vw;
+    }
+
+    .feature {
+        flex: 1 1 35%; /* 2 cartes par ligne */
+        width: 50%;
+    }
+
+    .container .how-title {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .feature {
+        flex: 1 1 35%; /* 2 carte par ligne */
+        /*width: 45%;*/
+    }
+}
