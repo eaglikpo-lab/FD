@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FoodWagon</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    
+    <!-- Font Awesome 5 Free (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./logWithMVC/public/css/FLASH.css">
+    <link rel="stylesheet" href="./logWithMVC/public/css/HowDoes.css">
+    <link rel="stylesheet" href="./logWithMVC/public/css/POP.css">
+    <link rel="stylesheet" href="./logWithMVC/public/css/fr.css">
+    <link rel="stylesheet" href="./logWithMVC/public/css/details.css">
+    <link rel="stylesheet" href="./logWithMVC/public/css/CTA-FOOTER.css">
+    <link rel="stylesheet" href="./logWithMVC/public/css/TopNap_Header.css">
+    <link rel="stylesheet" href="./logWithMVC/public/css/SFARES.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+</head>
+
+<body>
+    <main class="page-container">
+
+        <!--Top Nav + Header-->
+        <header class="top-nav-header">
+            <div class="container">
+                <!--Top Nav-->
+                <div class="top-nav">
+        
+                    <!--Logo-->
+                    <div class="logofoodwagon">
+        
+                        <!--Mask group-->
+                        <div class="logo">
+                            <img src="./logWithMVC/public/images/Mask Group.png" alt="logo">
+                        </div>
+        
+                        <!--Frame 36-->
+                        <div class="frame36">
+                            <span class="food">food<span class="wagon">wagon</span></span>
+                        </div>
+        
+                    </div>
+        
+                    <!--Deliver Address-->
+                    <div class="deliver-address">
+                        <div>
+                            <p>Deliver to:</p>
+                        </div>
+        
+                        <!--Frame 61-->
+                        <div class="frame61">
+                            <div>
+                                <img src="./logWithMVC/public/images/map-marker-alt.png" alt="location">
+                            </div>
+        
+                            <!--Frame 63-->
+                            <div class="frame63">
+                                <span class="current">Current Location </span>
+                                <span>Mohammadpur Bus Stand, Dhaka</span>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!--Search + Login button-->
+                    <div class="search-login-button">
+                        <!--Frame 39-->
+                        <div class="frame39">
+                            <span class="icon-search"><img src="./logWithMVC/public/images/Search.png"
+                                    alt="icon search"></span>
+                            <span class="search-food">Search Food</span>
+                        </div>
+        
+                        <!--Frame 29-->
+                        <button id="loginBtnframe29" class="frame29">
+                            <span class="icon-search"><img src="./logWithMVC/public/images/user.png"
+                                    alt="icon user"></span>
+                            <span class="login">Login</span>
+                        </button>
+        
+                    </div>
+        
+                </div>
+        
+        
+                <!--Header-->
+                <div class="header">
+
+                    <!--Background-->
+                    <div class="background-jaune">
+
+                        <!--Title + Order card-->
+                        <div class="title-order-card">
+                            <!--Title-->
+                            <div class="title">
+                                <h1>Are you starving?</h1>
+                                <p>Within a few clicks, find meals that are accessible near you</p>
+                            </div>
+                        
+                            <!--Order card-->
+                            <div class="order-card">
+                        
+                                <!--Top-->
+                                <div class="Top">
+                        
+                                    <!--Tab 1-->
+                                    <div class="tab">
+                                        <button class="tab1">
+                                            <span><img src="./logWithMVC/public/images/moto.png" alt="Icone moto"></span>
+                                            <span>Delivery</span>
+                                        </button>
+                                    
+                                        <!--Tab 2-->
+                                    
+                                        <button class="tab2">
+                                            <span><img src="./logWithMVC/public/images/sac.png" alt="Icone sac">Pickup</span>
+                                        </button>
+                                    </div>
+                                   
+                        
+                                </div>
+                        
+                        
+                                <!--HR-->
+                        
+                        
+                                <!--Bottom-->
+                                <div class="bottom">
+                                    <!--Text field + Button-->
+                                    <div class="text-field-button">
+                                        <!--Text field-->
+                                        <button class="text-field">
+                                            <span><img src="./logWithMVC/public/images/map.png" alt="Icone map"></span>
+                                            <input type="text" placeholder="Enter Your Address">
+                                        </button>
+                        
+                                        <!--Button-->
+                                        <button class="find-food-btn">
+                                            <span><img src="./logWithMVC/public/images/recherche.png" alt="Icone Search"> Find
+                                                Food</span>
+                                        </button>
+                        
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+                        
+                        <!--Image-->
+                        <div class="noodle">
+                            <img src="./logWithMVC/public/images/Image Base.png" alt="Nouilles">
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+        
+            </div>
+        
+        </header>
+
+
+        <!--Flash deals-->
+        <section class="flash-deal">
+            <div class="flash-deal-container">
+        
+                <!--Flash deal card 1-->
+                <div class="flashcard">
+                    <!--Food Photo-->
+                    <div class="food-photo">
+
+        
+                        <!--Image-->
+                        <div class="picture">
+                            <img src="./logWithMVC/public/images/Food Photo1.png" alt="Plate 1">
+                        </div>
+                    </div>
+        
+                    <!--Text + Badges-->
+                    <div class="flashtext-badge">
+                        <div class="grey">Greys Vage</div>
+                    
+                        <!--Frame 77-->
+                        <div class="six-day">6 Days Remaining</div>
+                    </div>
+                </div>
+        
+                <!--Flash deal card 2-->
+                <div class="flashcard">
+                    <!--Food Photo-->
+                    <div class="food-photo">
+        
+                        <!--Image-->
+                        <div class="picture">
+                            <img src="./logWithMVC/public/images/Food Photo2.png" alt="Plate 2">
+                        </div>
+                    </div>
+        
+                    <!--Text + Badges-->
+                    <div class="flashtext-badge">
+                        <div class="grey">Greys Vage</div>
+        
+                        <!--Frame 77-->
+                        <div class="six-day">6 Days Remaining</div>
+                    </div>
+                </div>
+        
+                <!--Flash deal card 3-->
+                <div class="flashcard">
+                    <!--Food Photo-->
+                    <div class="food-photo">
+        
+                        <!--Image-->
+                        <div class="picture">
+                            <img src="./logWithMVC/public/images/Food Photo3.png" alt="Plate 3">
+                        </div>
+                    </div>
+        
+                    <!--Text + Badges-->
+                    <div class="flashtext-badge">
+                        <div class="grey">Greys Vage</div>
+        
+                        <!--Frame 77-->
+                        <div class="six-day">7 Days Remaining</div>
+                    </div>
+                </div>
+        
+                <!--Flash deal card 4-->
+                <div class="flashcard">
+                    <!--Food Photo-->
+                    <div class="food-photo">
+    
+                        <!--Image-->
+                        <div class="picture">
+                            <img src="./logWithMVC/public/images/Food Photo4.png" alt="Plate 4">
+                        </div>
+                    </div>
+        
+                    <!--Text + Badges-->
+                    <div class="flashtext-badge">
+                        <div class="grey">Greys Vage</div>
+        
+                        <!--Frame 77-->
+                        <div class="six-day">8 Days Remaining</div>
+                    </div>
+        
+                </div>
+        
+            </div>
+        </section>
+
+
+        <!--How it works-->
+        <section class="how-it-works">
+            <div class="container">
+                <!-- Title -->
+                <h2 class="how-title">How does it work</h2>
+        
+                <!-- Features -->
+                <div class="features">
+                    <!-- Frame 1 -->
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="./logWithMVC/public/images/h1.png" alt="Select location">
+                        </div>
+                        <div class="texts">
+                            <h3 class="feature-title">Select location</h3>
+                            <p class="feature-body">Choose the location where your food will be delivered.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Frame 2 -->
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="./logWithMVC/public/images/h2.png" alt="Choose order">
+                        </div>
+                        <div class="texts">
+                            <h3 class="feature-title">Choose order</h3>
+                            <p class="feature-body">Check over hundreds of menus to pick your favorite food.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Frame 3 -->
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="./logWithMVC/public/images/h3.png" alt="Pay advanced">
+                        </div>
+                        <div class="texts">
+                            <h3 class="feature-title">Pay advanced</h3>
+                            <p class="feature-body">It's quick, safe, and simple. Select several methods of payment.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Frame 4 -->
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="./logWithMVC/public/images/h4.png" alt="Enjoy meals">
+                        </div>
+                        <div class="texts">
+                            <h3 class="feature-title">Enjoy meals</h3>
+                            <p class="feature-body">Food is made and delivered directly to your home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        
+        <!--Popular items-->
+        <section class="popular-items">
+        
+            <!--Slider button-->
+            <div class="popslider-button">
+            
+                <!--Arrow left-->
+                <div class="poparrow">
+                    <button class="popleft">&lt;</button>
+                </div>
+            
+                <!--Arrow rigth-->
+                <div class="poparrow">
+                    <button class="popright">&gt;</button>
+                </div>
+            
+            </div>
+            <div class="popular-items-container">
+        
+                <!--Title + Cards-->
+                <div class="title-cards">
+        
+                    <!-- Title -->
+                    <h2 class="title">Popular items</h2>
+        
+                    <!--Cards-->
+                    <div class="cards">
+        
+                        <!--1-->
+                        <div class="carte">
+        
+                            <!--Image + Title-->
+                            <div class="image-title">
+        
+                                <!--Frame 40-->
+                                <div class="img-cheese">
+                                    <img src="./logWithMVC/public/images/cheese.png" alt="Cheese">
+                                </div>
+        
+                                <!--Name + Location + Price-->
+                                <div class="name-location-price">
+        
+                                    <!--Name + Location-->
+                                    <div class="name-location">
+                                        <!--Name-->
+                                        <div class="name">
+                                            <p>Cheese Burger</p>
+                                        </div>
+        
+                                        <!--Location-->
+                                        <div class="Location">
+        
+                                            <!--Icon-->
+                                            <div class="icon">
+                                                <img src="./logWithMVC/public/images/Icon.png" alt="Icon">
+                                            </div>
+        
+                                            <!--Text-->
+                                            <div class="text">
+                                                <p>Burger Arena</p>
+                                            </div>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <!--Price-->
+                                    <p class="price">$3.88</p>
+        
+                                </div>
+        
+                            </div>
+        
+                            <!--Button-->
+                            <div class="button">
+                                <button>Order Now</button>
+                            </div>
+        
+                        </div>
+        
+                        <!--2-->
+                        <div class="carte">
+        
+                            <!--Image + Title-->
+                            <div class="image-title">
+        
+                                <!--Frame 40-->
+                                <div class="img-cheese">
+                                    <img src="./logWithMVC/public/images/cake.png" alt="cake">
+                                </div>
+        
+                                <!--Name + Location + Price-->
+                                <div class="name-location-price">
+        
+                                    <!--Name + Location-->
+                                    <div class="name-location">
+                                        <!--Name-->
+                                        <div class="name">
+                                            <p>Toffe’s Caker</p>
+                                        </div>
+        
+                                        <!--Location-->
+                                        <div class="Location">
+        
+                                            <!--Icon-->
+                                            <div class="icon">
+                                                <img src="./logWithMVC/public/images/Icon.png" alt="Icon">
+                                            </div>
+        
+                                            <!--Text-->
+                                            <div class="text">
+                                                <p>Top Sticks</p>
+                                            </div>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <!--Price-->
+                                    <p class="price">$3.88</p>
+        
+                                </div>
+        
+                            </div>
+        
+                            <!--Button-->
+                            <div class="button">
+                                <button>Order Now</button>
+                            </div>
+        
+                        </div>
+        
+                        <!--3-->
+                        <div class="carte">
+        
+                            <!--Image + Title-->
+                            <div class="image-title">
+        
+                                <!--Frame 40-->
+                                <div class="img-cheese">
+                                    <img src="./logWithMVC/public/images/dancake.png" alt="Cheese">
+                                </div>
+        
+                                <!--Name + Location + Price-->
+                                <div class="name-location-price">
+        
+                                    <!--Name + Location-->
+                                    <div class="name-location">
+                                        <!--Name-->
+                                        <div class="name">
+                                            <p>Dancake</p>
+                                        </div>
+        
+                                        <!--Location-->
+                                        <div class="Location">
+        
+                                            <!--Icon-->
+                                            <div class="icon">
+                                                <img src="./logWithMVC/public/images/Icon.png" alt="Icon">
+                                            </div>
+        
+                                            <!--Text-->
+                                            <div class="text">
+                                                <p>Cake World</p>
+                                            </div>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <!--Price-->
+                                    <p class="price">$4.00</p>
+        
+                                </div>
+        
+                            </div>
+        
+                            <!--Button-->
+                            <div class="button">
+                                <button>Order Now</button>
+                            </div>
+        
+                        </div>
+        
+                        <!--4-->
+                        <div class="carte">
+        
+                            <!--Image + Title-->
+                            <div class="image-title">
+        
+                                <!--Frame 40-->
+                                <div class="img-cheese">
+                                    <img src="./logWithMVC/public/images/crispy.png" alt="Cheese">
+                                </div>
+        
+                                <!--Name + Location + Price-->
+                                <div class="name-location-price">
+        
+                                    <!--Name + Location-->
+                                    <div class="name-location">
+                                        <!--Name-->
+                                        <div class="name">
+                                            <p>Crispy Sandwich</p>
+                                        </div>
+        
+                                        <!--Location-->
+                                        <div class="Location">
+        
+                                            <!--Icon-->
+                                            <div class="icon">
+                                                <img src="./logWithMVC/public/images/Icon.png" alt="Icon">
+                                            </div>
+        
+                                            <!--Text-->
+                                            <div class="text">
+                                                <p>Fastfood Dine</p>
+                                            </div>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <!--Price-->
+                                    <p class="price">$3.00</p>
+        
+                                </div>
+        
+                            </div>
+        
+                            <!--Button-->
+                            <div class="button">
+                                <button>Order Now</button>
+                            </div>
+        
+                        </div>
+        
+                        <!--5-->
+                        <div class="carte">
+        
+                            <!--Image + Title-->
+                            <div class="image-title">
+        
+                                <!--Frame 40-->
+                                <div class="img-cheese">
+                                    <img src="./logWithMVC/public/images/soup.png" alt="Cheese">
+                                </div>
+        
+                                <!--Name + Location + Price-->
+                                <div class="name-location-price">
+        
+                                    <!--Name + Location-->
+                                    <div class="name-location">
+                                        <!--Name-->
+                                        <div class="name">
+                                            <p>Thai Soup</p>
+                                        </div>
+        
+                                        <!--Location-->
+                                        <div class="Location">
+        
+                                            <!--Icon-->
+                                            <div class="icon">
+                                                <img src="./logWithMVC/public/images/Icon.png" alt="Icon">
+                                            </div>
+        
+                                            <!--Text-->
+                                            <div class="text">
+                                                <p>Foody man</p>
+                                            </div>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <!--Price-->
+                                    <p class="price">$2.79</p>
+        
+                                </div>
+        
+                            </div>
+        
+                            <!--Button-->
+                            <div class="button">
+                                <button>Order Now</button>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+        <!--Featured Restaurant-->
+        <section class="featured-restaurant">
+            <!--Featured Restaurant container-->
+            <div class="featured-restaurant-container">
+        
+                <!-- Title -->
+                <h2 class="title">Featured Restaurant</h2>
+        
+        
+                <!--Cards grid-->
+                <div class="cards">
+                    <!--1-->
+                    <div class="CARTE">
+                        <!--Food Photo-->
+                        <div class="food-photo">
+                            <!--Image-->
+                            <img src="./logWithMVC/public/images/sfa/grid1.png" alt="Food Photo">
+                        </div>
+        
+                        <!--Image + Name + Review + Badge-->
+                        <div class="image-name-review-badge">
+                            <!--Image + Name + Review-->
+                            <div class="image-name-review">
+                                <!--Restaurant Logo-->
+                                <div class="logo">
+                                    <img src="./logWithMVC/public/images/friendly.png" alt="restaurant logo">
+                                </div>
+        
+                                <!--Name + Review-->
+                                <div class="name-review">
+                                    <!--Name-->
+                                    <div class="named">Foodworld</div>
+        
+                                    <!--Review-->
+                                    <div class="review">
+                                        <div class="icon"><img src="./logWithMVC/public/images/star.png" alt="icon star"></div>
+                                        <div class="text">
+                                            46
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <!--Badge-->
+                            <div class="badge-orange">Opens tomorrow</div>
+                        </div>
+        
+        
+                    </div>
+        
+                    <!--2-->
+                    <div class="CARTE">
+                        <!--Food Photo-->
+                        <div class="food-photo">
+                            <!--Image-->
+                            <img src="./logWithMVC/public/images/sfa/grid2.png" alt="Food Photo">
+                        </div>
+        
+                        <!--Image + Name + Review + Badge-->
+                        <div class="image-name-review-badge">
+                            <!--Image + Name + Review-->
+                            <div class="image-name-review">
+                                <!--Restaurant Logo-->
+                                <div class="logo">
+                                    <img src="./logWithMVC/public/images/pizza.png" alt="restaurant logo">
+                                </div>
+        
+                                <!--Name + Review-->
+                                <div class="name-review">
+                                    <!--Name-->
+                                    <div class="named">Pizzahub</div>
+        
+                                    <!--Review-->
+                                    <div class="review">
+                                        <div class="icon"><img src="./logWithMVC/public/images/star.png" alt="icon star"></div>
+                                        <div class="text">
+                                            40
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <!--Badge-->
+                            <div class="badge-orange">Opens tomorrow</div>
+                        </div>
+                    </div>
+        
+                    <!--3-->
+                    <div class="CARTE">
+                        <!--Food Photo-->
+                        <div class="food-photo">
+                            <!--Image-->
+                            <img src="./logWithMVC/public/images/sfa/grid3.png" alt="Food Photo">
+                        </div>
+        
+                        <!--Image + Name + Review + Badge-->
+                        <div class="image-name-review-badge">
+                            <!--Image + Name + Review-->
+                            <div class="image-name-review">
+                                <!--Restaurant Logo-->
+                                <div class="logo">
+                                    <img src="./logWithMVC/public/images/dunkin.png" alt="restaurant logo">
+                                </div>
+        
+                                <!--Name + Review-->
+                                <div class="name-review">
+                                    <!--Name-->
+                                    <div class="named">Donuts hut</div>
+        
+                                    <!--Review-->
+                                    <div class="review">
+                                        <div class="icon"><img src="./logWithMVC/public/images/star.png" alt="icon star"></div>
+                                        <div class="text">
+                                            20
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <!--Badge-->
+                            <div class="badge-vert">Opens now</div>
+                        </div>
+                    </div>
+        
+                    <!--4-->
+                    <div class="CARTE">
+                        <!--Food Photo-->
+                        <div class="food-photo">
+                            <!--Image-->
+                            <img src="./logWithMVC/public/images/sfa/grid4.png" alt="Food Photo">
+                        </div>
+        
+                        <!--Image + Name + Review + Badge-->
+                        <div class="image-name-review-badge">
+                            <!--Image + Name + Review-->
+                            <div class="image-name-review">
+                                <!--Restaurant Logo-->
+                                <div class="logo">
+                                    <img src="./logWithMVC/public/images/subway.png" alt="restaurant logo">
+                                </div>
+        
+                                <!--Name + Review-->
+                                <div class="name-review">
+                                    <!--Name-->
+                                    <div class="named">Donuts hut</div>
+        
+                                    <!--Review-->
+                                    <div class="review">
+                                        <div class="icon"><img src="./logWithMVC/public/images/star.png" alt="icon star"></div>
+                                        <div class="text">
+                                            50
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <!--Badge-->
+                            <div class="badge-vert">Opens now</div>
+                        </div>
+                    </div>
+        
+                    <!--5-->
+                    <div class="CARTE">
+                        <!--Food Photo-->
+                        <div class="food-photo">
+                            <!--Image-->
+                            <img src="./logWithMVC/public/images/sfa/grid5.png" alt="Food Photo">
+                        </div>
+        
+                        <!--Image + Name + Review + Badge-->
+                        <div class="image-name-review-badge">
+                            <!--Image + Name + Review-->
+                            <div class="image-name-review">
+                                <!--Restaurant Logo-->
+                                <div class="logo">
+                                    <img src="./logWithMVC/public/images/ruby.png" alt="restaurant logo">
+                                </div>
+        
+                                <!--Name + Review-->
+                                <div class="name-review">
+                                    <!--Name-->
+                                    <div class="named">Ruby Tuesday</div>
+        
+                                    <!--Review-->
+                                    <div class="review">
+                                        <div class="icon"><img src="./logWithMVC/public/images/star.png" alt="icon star"></div>
+                                        <div class="text">
+                                            26
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <!--Badge-->
+                            <div class="badge-vert">Opens now</div>
+                        </div>
+                    </div>
+        
+                    <!--6-->
+                    <div class="CARTE">
+                        <!--Food Photo-->
+                        <div class="food-photo">
+                            <!--Image-->
+                            <img src="./logWithMVC/public/images/sfa/grid6.png" alt="Food Photo">
+                        </div>
+        
+                        <!--Image + Name + Review + Badge-->
+                        <div class="image-name-review-badge">
+                            <!--Image + Name + Review-->
+                            <div class="image-name-review">
+                                <!--Restaurant Logo-->
+                                <div class="logo">
+                                    <img src="./logWithMVC/public/images/kfc.png" alt="restaurant logo">
+                                </div>
+        
+                                <!--Name + Review-->
+                                <div class="name-review">
+                                    <!--Name-->
+                                    <div class="named">Kuakata Fried Chicken</div>
+        
+                                    <!--Review-->
+                                    <div class="review">
+                                        <div class="icon"><img src="./logWithMVC/public/images/star.png" alt="icon star"></div>
+                                        <div class="text">
+                                            53
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <!--Badge-->
+                            <div class="badge-vert">Opens now</div>
+                        </div>
+                    </div>
+        
+                    <!--7-->
+                    <div class="CARTE">
+                        <!--Food Photo-->
+                        <div class="food-photo">
+                            <!--Image-->
+                            <img src="./logWithMVC/public/images/sfa/grid7.png" alt="Food Photo">
+                        </div>
+        
+                        <!--Image + Name + Review + Badge-->
+                        <div class="image-name-review-badge">
+                            <!--Image + Name + Review-->
+                            <div class="image-name-review">
+                                <!--Restaurant Logo-->
+                                <div class="logo">
+                                    <img src="./logWithMVC/public/images/bs.png" alt="restaurant logo">
+                                </div>
+        
+                                <!--Name + Review-->
+                                <div class="name-review">
+                                    <!--Name-->
+                                    <div class="named">Red Square</div>
+        
+                                    <!--Review-->
+                                    <div class="review">
+                                        <div class="icon"><img src="./logWithMVC/public/images/star.png" alt="icon star"></div>
+                                        <div class="text">
+                                            45
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <!--Badge-->
+                            <div class="badge-vert">Opens now</div>
+                        </div>
+                    </div>
+        
+                    <!--8-->
+                    <div class="CARTE">
+                        <!--Food Photo-->
+                        <div class="food-photo">
+                            <!--Image-->
+                            <img src="./logWithMVC/public/images/sfa/grid8.png" alt="Food Photo">
+                        </div>
+        
+                        <!--Image + Name + Review + Badge-->
+                        <div class="image-name-review-badge">
+                            <!--Image + Name + Review-->
+                            <div class="image-name-review">
+                                <!--Restaurant Logo-->
+                                <div class="logo">
+                                    <img src="./logWithMVC/public/images/taco.png" alt="restaurant logo">
+                                </div>
+        
+                                <!--Name + Review-->
+                                <div class="name-review">
+                                    <!--Name-->
+                                    <div class="named">Taco Bell</div>
+        
+                                    <!--Review-->
+                                    <div class="review">
+                                        <div class="icon"><img src="./logWithMVC/public/images/star.png" alt="icon star"></div>
+                                        <div class="text">
+                                            35
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <!--Badge-->
+                            <div class="badge-vert">Opens now</div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <!--Button-->
+                <div class="button">
+                    <span class="text">View All
+                        <span>&gt;</span>
+                    </span>
+                </div>
+        
+            </div>
+        </section>
+
+
+
+        <!--Search by Food + Features + App Download-->
+        <section class="searchbyfood-features-appdownload-container">
+        
+            <div class="searchbyfood-features-appdownload-container">
+                <!--Search by Food-->
+                <div class="searchbyfood">
+        
+                    <!--Title + Items + Button-->
+                    <div class="sfa-title-items-button">
+                        <!--Header-->
+                        <div class="Header">
+                            <!--Title-->
+                            <h2 class="sfa-title">Search by Food</h2>
+        
+                            <!--Buttons-->
+                            <div class="sfa-buttons">
+        
+                                <!--Button-->
+                                <div class="sfa-button">
+                                    <button><span>View all &gt;</span></button>
+                                </div>
+        
+                                <!--Slider button-->
+                                <div class="sfa-slider-button">
+                                    <!--Arrow Left-->
+                                    <div class="sfa-arrow"><span id="sfa-left">&lt;</span></div>
+        
+                                    <!--Arrow Right-->
+                                    <div class="sfa-arrow"><span id="sfa-right">&gt;</span></div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!--Items grid-->
+                        <div class="sfa-items">
+                            <!--1-->
+                            <div class="sfa-item">
+                                <!--Food Photo-->
+                                <div class="sfafood-photo">
+                                    <!--Image-->
+                                    <img src="./logWithMVC/public/images/sfa/food1.png" alt="Food Photo">
+                                </div>
+        
+                                <!--Name-->
+                                <div class="sfa-name">Pizza</div>
+        
+                            </div>
+        
+                            <!--2-->
+                            <div class="sfa-item">
+                                <!--Food Photo-->
+                                <div class="sfafood-photo">
+                                    <!--Image-->
+                                    <img src="./logWithMVC/public/images/sfa/food2.png" alt="Food Photo">
+                                </div>
+        
+                                <!--Name-->
+                                <div class="sfa-name">Burger</div>
+        
+                            </div>
+        
+                            <!--3-->
+                            <div class="sfa-item">
+                                <!--Food Photo-->
+                                <div class="sfafood-photo">
+                                    <!--Image-->
+                                    <img src="./logWithMVC/public/images/sfa/food3.png" alt="Food Photo">
+                                </div>
+        
+                                <!--Name-->
+                                <div class="sfa-name">Noodles</div>
+        
+                            </div>
+        
+                            <!--4-->
+                            <div class="sfa-item">
+                                <!--Food Photo-->
+                                <div class="sfafood-photo">
+                                    <!--Image-->
+                                    <img src="./logWithMVC/public/images/sfa/food4.png" alt="Food Photo">
+                                </div>
+        
+                                <!--Name-->
+                                <div class="sfa-name">Sub-sandiwch</div>
+        
+                            </div>
+        
+                            <!--5-->
+                            <div class="sfa-item">
+                                <!--Food Photo-->
+                                <div class="sfafood-photo">
+                                    <!--Image-->
+                                    <img src="./logWithMVC/public/images/sfa/food5.png" alt="Food Photo">
+                                </div>
+        
+                                <!--Name-->
+                                <div class="sfa-name">Chowmein</div>
+        
+                            </div>
+        
+                            <!--6-->
+                            <div class="sfa-item">
+                                <!--Food Photo-->
+                                <div class="sfafood-photo">
+                                    <!--Image-->
+                                    <img src="./logWithMVC/public/images/sfa/food6.png" alt="Food Photo">
+                                </div>
+        
+                                <!--Name-->
+                                <div class="sfa-name">Steak</div>
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <!--Features-->
+                <div class="sfa-features">
+                    <!--Card-->
+                    <div class="sfa-cards">
+        
+                        <!--1-->
+                        <div class="sfa-card">
+                            <!--icon-->
+                            <div class="sfa-icon">
+                                <img src="./logWithMVC/public/images/sfa/I1.png" alt="ICON">
+                            </div>
+        
+                            <!--Text-->
+                            <p class="text">Daily Discounts</p>
+                        </div>
+        
+                        <!--HR-->
+                        <!--div class="sfa-HR"><span></span></div-->
+                        <div class="sfa-HR"><span>|</span></div>
+
+        
+                        <!--2-->
+                        <div class="sfa-card">
+                            <!--icon-->
+                            <div class="sfa-icon">
+                                <img src="./logWithMVC/public/images/sfa/I2.png" alt="ICON">
+                            </div>
+        
+                            <!--Text-->
+                            <p class="text">Live Tracing</p>
+                        </div>
+        
+                        <!--HR-->
+                        <!--div class="sfa-HR"><span></span></div-->
+                        <div class="sfa-HR"><span>|</span></div>
+        
+                        <!--3-->
+                        <div class="sfa-card">
+                            <!--icon-->
+                            <div class="sfa-icon">
+                                <img src="./logWithMVC/public/images/sfa/I3.png" alt="ICON">
+                            </div>
+        
+                            <!--Text-->
+                            <p class="text">Quick Delivery</p>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <!--App Download-->
+                <div class="appdownload">
+        
+                    <div class="sfa-arriere">
+                        <img src="./logWithMVC/public/images/sfa/bg.png" alt="">
+                    </div>
+        
+                    <div class="sfa-avant">
+                        <!--Image-->
+                        <div class="sfa-image">
+                            <img src="./logWithMVC/public/images/sfa/iphone .png" alt="ICON">
+                        </div>
+        
+                        <!--Text + Button-->
+                        <div class="sfa-text-button">
+        
+                            <!--Text-->
+                            <div class="bloctextinstall">
+                                <!--Title-->
+                                <h1>Install the app</h1>
+                                <!--body-->
+                                <p>It's never been easier to order food. Look for the finest discounts and you'll be lost in a
+                                    world of
+                                    delectable food.</p>
+        
+                            </div>
+        
+                            <!--Button-->
+                            <div class="blocbuttonGoogleApp">
+                                <!--Google Play Download-->
+                                <div class="google-play-download">
+                                    <img src="./logWithMVC/public/images/sfa/Google Play Download.png" alt="ICON">
+                                </div>
+        
+                                <!--App Store Download Button-->
+                                <div class="google-play-download">
+                                    <img src="./logWithMVC/public/images/sfa/App Store Download Button.png" alt="ICON">
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="background-sfa">
+        
+                    </div>
+                </div>
+        
+            </div>
+        
+        </section>
+
+
+
+
+        <!--Details-->
+        <section class="details">
+            <!--Details container-->
+            <div class="details-container">
+                <!--Details cards 1-->
+                <div class="details-card">
+                    <!--Left-->
+                    <div class="left-detail">
+                        <!--Text-->
+                        <div class="text-best">
+                            <!--Title-->
+                            <div class="title-best">
+                                <span>Best deals <span class="orange">Crispy Sandwiches</span></span>
+                            </div>
+        
+                            <!--Body-->
+                            <p class="body-best">Enjoy the large size of sandwiches. Complete perfect slice of sandwiches.</p>
+                        </div>
+        
+                        <!--Button-->
+                        <div class="button-left">
+                            <button>
+                                <span>PROCEED TO ORDER <span class="chevron">&gt;</span></span>
+                            </button>
+        
+                        </div>
+                    </div>
+        
+                    <!--Right-->
+                    <div class="right-detail">
+                        <img src="./logWithMVC/public/images/details/Right1.png" alt="details cards 1 photo">
+                    </div>
+        
+                </div>
+        
+                <!--Details cards 2-->
+                <div class="details-card" id="d2">
+                    <!--Left-->
+                    <div class="left-detail">
+                        <!--Text-->
+                        <div class="text-best">
+                            <!--Title-->
+                            <div class="title-best">
+                                <span>Celebrate parties with <span class="orange">Fried Chicken</span></span>
+                            </div>
+        
+                            <!--Body-->
+                            <p class="body-best">Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out
+                                best deals for fried chicken.</p>
+                        </div>
+        
+                        <!--Button-->
+                        <div class="button-left">
+                            <button>
+                                <span>PROCEED TO ORDER <span class="chevron">&gt;</span></span>
+                            </button>
+        
+                        </div>
+                    </div>
+        
+                    <!--Right-->
+                    <div class="right-detail">
+                        <img src="./logWithMVC/public/images/details/Right3.png" alt="details cards 1 photo">
+                    </div>
+        
+                </div>
+        
+                <!--Details cards 3-->
+                <div class="details-card">
+                    <!--Left-->
+                    <div class="left-detail">
+                        <!--Text-->
+                        <div class="text-best">
+                            <!--Title-->
+                            <div class="title-best">
+                                <span>Wanna eat hot & spicy <span class="orange">Pizza?</span></span>
+                            </div>
+        
+                            <!--Body-->
+                            <p class="body-best">Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best
+                                deals.</p>
+                        </div>
+        
+                        <!--Button-->
+                        <div class="button-left">
+                            <button>
+                                <span>PROCEED TO ORDER <span class="chevron">&gt;</span></span>
+                            </button>
+        
+                        </div>
+                    </div>
+        
+                    <!--Right-->
+                    <div class="right-detail">
+                        <img src="./logWithMVC/public/images/details/Right2.png" alt="details cards 1 photo">
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+   
+        <!--CTA + Footer-->
+        <section class="CTA-footer">
+            <!--CTA-footer container-->
+            <div class="CTA-footer-container">
+        
+                <!--CTA-->
+                <div class="CTA">
+                    <!--BG-->
+                    <div class="BG">
+                        <img src="./logWithMVC/public/images/CTA/bg.png" alt=" background image">
+                    </div>
+        
+                    <!--text-button-->
+                    <div class="text-button">
+                        <!--Text-->
+                        <h2>Are you ready to order with the best deals?</h2>
+        
+                        <!--Button-->
+                        <button class="proc-button">
+                            <span>PROCEED TO ORDER <span class="chevron"> &gt;</span></span>
+                        </button>
+                    </div>
+        
+                </div>
+        
+                <!--Footer-->
+                <div class="footer">
+                    <!--Our Top Cities-->
+                    <div class="OurTopCities">
+        
+                        <!--Title-->
+                        <h3>Our top cities</h3>
+        
+                        <!--Items-->
+                        <div class="items">
+                            <!--item1-->
+                            <div class="item1">
+                                <span>San Francisco</span>
+                                <span>Miami</span>
+                                <span>San Diego</span>
+                                <span>East Bay</span>
+                                <span>Long Beach</span>
+                            </div>
+        
+                            <!--item2-->
+                            <div class="item1">
+                                <span>Los Angeles</span>
+                                <span>Washington DC</span>
+                                <span>Seattle</span>
+                                <span>Portland</span>
+                                <span>Nashville</span>
+                            </div>
+        
+                            <!--item3-->
+                            <div class="item1">
+                                <span>New York City</span>
+                                <span>Orange County</span>
+                                <span>Atlanta</span>
+                                <span>Charlotte</span>
+                                <span>Denver</span>
+                            </div>
+        
+                            <!--item4-->
+                            <div class="item1">
+                                <span>Chicago</span>
+                                <span>Phoenix</span>
+                                <span>Las Vegas</span>
+                                <span>Sacramento</span>
+                                <span>Oklahoma City</span>
+                            </div>
+        
+                            <!--item5-->
+                            <div class="item1">
+                                <span>Columbus</span>
+                                <span>New Mexico</span>
+                                <span>Albuquerque</span>
+                                <span>Sacramento</span>
+                                <span>New Orleans</span>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!--Menu + Subscription + Rights-->
+                    <div class="MenuSubscriptionRights">
+                        <!--Menu + Subscription-->
+                        <div class="MenuSubscription">
+        
+                            <!--Menus-->
+                            <div class="menus">
+                                <!--menu 1-->
+                                <div class="menu">
+                                    <!--Title-->
+                                    <h3>Company</h3>
+        
+                                    <!--item-menu1-->
+                                    <div class="item1">
+                                        <span>About us</span>
+                                        <span>Team</span>
+                                        <span>Careers</span>
+                                        <span>Blog</span>
+                                    </div>
+                                </div>
+        
+                                <!--menu 2-->
+                                <div class="menu">
+                                    <!--Title-->
+                                    <h3>Contact</h3>
+        
+                                    <!--item-menu2-->
+                                    <div class="item1">
+                                        <span>Help & Support</span>
+                                        <span>Partner with us</span>
+                                        <span>Ride with us</span>
+                                    </div>
+                                </div>
+        
+                                <!--menu 3-->
+                                <div class="menu">
+                                    <!--Title-->
+                                    <h3>Legal</h3>
+        
+                                    <!--item-menu3-->
+                                    <div class="item1">
+                                        <span>Terms & Conditions</span>
+                                        <span>Refund & Cancellation</span>
+                                        <span>Privacy Policy</span>
+                                        <span>Cookie Policy</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!--Follow + Subscription-->
+                            <div class="FollowSubscription">
+                                <!--Follow Us-->
+                                <div class="follow-us">
+                                    <!--Title-->
+                                    <span>FOLLOW US</span>
+        
+                                    <!--Icon-->
+                                    <div class="icons">
+                                        <div class="icon"><img src="./logWithMVC/public/images/CTA/1.png" alt="instagram "></div>
+                                        <div class="icon"><img src="./logWithMVC/public/images/CTA/2.png" alt="facebook "></div>
+                                        <div class="icon"><img src="./logWithMVC/public/images/CTA/3.png" alt=" twitter"></div>
+                                    </div>
+        
+                                </div>
+        
+                                <!--Subscription-->
+                                <div class="subscription">
+                                    <!--Text-->
+                                    <p>Receive exclusive offers in your mailbox</p>
+        
+                                    <!--Text field + Button-->
+                                    <div class="text-field-button">
+                                        <!--Text field-->
+                                        <button class="text-field">
+                                            <span><img src="./logWithMVC/public/images/CTA/envelope.png" alt="Icone mail"></span>
+                                            <input type="text" placeholder="Enter Your Email">
+                                        </button>
+        
+                                        <!--Button-->
+                                        <button class="button">
+                                            <span>Suscribe</span>
+                                        </button>
+        
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!--HR + Rights-->
+                    <div class="HR-rights">
+        
+                        <!--Rights-->
+                        <div class="Rights">
+                            <span class="all">All rights Reserved</span>
+                            <span class="copy">&copy;</span>
+                            <span class="company">Your Company, 2021</span>
+                        </div>
+        
+                        <!--Made by-->
+                        <div class="made-by">
+                            <span class="made">Made with </span>
+                            <span class="heart">&hearts;</span>
+                            <span class="made">by</span>
+                            <span class="theme">Themewagon</span>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        
+            </div>
+        
+        </section>
+    </main>
+
+    <script src="./logWithMVC/public/js/user.js"></script>
+</body>
+
+</html>
