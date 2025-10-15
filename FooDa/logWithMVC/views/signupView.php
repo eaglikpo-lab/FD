@@ -13,7 +13,7 @@
       <div class="login-card">
 
         <div class="login-header">
-          <h2>Sign In</h2>
+          <h2>Sign Up</h2>
           <p>Enter your credentials to register</p>
         </div>
 
@@ -27,7 +27,7 @@
 
           <div class="form-group">
             <div class="input-wrapper">
-              <input type="text" id="name" name="name" autocomplete="name" placeholder="Name" required>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Name" >
               <!-- <label for="name">Name</label> -->
             </div>
             <span class="error-message" id="nameError"></span>
@@ -35,7 +35,7 @@
 
           <div class="form-group">
             <div class="input-wrapper">
-              <input type="email" id="email" name="email" autocomplete="email" placeholder="Email Adress" required>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="Email Adress" >
               <!-- <label for="email">Email Address</label> -->
             </div>
             
@@ -44,7 +44,7 @@
 
           <div class="form-group">
             <div class="input-wrapper password-wrapper">
-                <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Password" required>
+                <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Password">
                 <!-- <label for="password">Password</label> -->
                 <button type="button" class="password-toggle" id="passwordToggle" aria-label="Toggle password visibility">
                     <span class="eye-icon"></span>
@@ -55,7 +55,7 @@
 
           
           <button type="submit" class="login-btn">
-            <span class="btn-text">Sign In</span>
+            <span class="btn-text">Sign Up</span>
             <span class="btn-loader"></span>
           </button>
         </form>
@@ -69,14 +69,20 @@
     <script src="../public/js/user.js"></script>
   </body>
 </html>
-<!-- <div class="form-options">
-            <label class="remember-wrapper">
-            <input type="checkbox" id="remember" name="remember">
-            <span class="checkbox-label">
-              <span class="checkmark"></span>
-                Remember me
-              </span>
-              </label>
-                <a href="#" class="forgot-password">Forgot password?</a>
-          </div>
-          -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

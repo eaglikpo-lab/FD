@@ -55,7 +55,7 @@
 
         
         <div class="signup-link">
-          <p>Don't have an account? <a id="signinBtn">Sign in</a> </p>
+          <p>Don't have an account? <a id="signinBtn">Sign up</a> </p>
         </div>
       </div>
     </div>

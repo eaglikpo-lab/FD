@@ -26,7 +26,7 @@ class LoginController
                 $this->showLoginForm();
             }
         } catch (Exception $e) {        // Erreur globale non prévue
-            $error = "Une erreur inattendue est survenue : " . $e->getMessage();
+            $errorMessage = "Une erreur inattendue est survenue : " . $e->getMessage();
             include __DIR__ . '/../views/loginView.php';
         }
     }
@@ -72,7 +72,7 @@ class LoginController
 
             // Validation de base
             if (empty($email) || empty($password)) {
-                throw new Exception("Veuillez remplir tous les champs.");
+                throw new Exception("Veuillez remplir tous les champs!");
             }
 
             // Récupérer l'utilisateur

@@ -31,152 +31,6 @@
 <body>
     <main class="page-container">
 
-        <!--Top Nav + Header-->
-        <header class="top-nav-header">
-            <div class="container">
-                <!--Top Nav-->
-                <div class="top-nav">
-        
-                    <!--Logo-->
-                    <div class="logofoodwagon">
-        
-                        <!--Mask group-->
-                        <div class="logo">
-                            <img src="./logWithMVC/public/images/Mask Group.png" alt="logo">
-                        </div>
-        
-                        <!--Frame 36-->
-                        <div class="frame36">
-                            <span class="food">food<span class="wagon">wagon</span></span>
-                        </div>
-        
-                    </div>
-        
-                    <!--Deliver Address-->
-                    <div class="deliver-address">
-                        <div>
-                            <p>Deliver to:</p>
-                        </div>
-        
-                        <!--Frame 61-->
-                        <div class="frame61">
-                            <div>
-                                <img src="./logWithMVC/public/images/map-marker-alt.png" alt="location">
-                            </div>
-        
-                            <!--Frame 63-->
-                            <div class="frame63">
-                                <span class="current">Current Location </span>
-                                <span>Mohammadpur Bus Stand, Dhaka</span>
-                            </div>
-                        </div>
-        
-                    </div>
-        
-                    <!--Search + Login button-->
-                    <div class="search-login-button">
-                        <!--Frame 39-->
-                        <div class="frame39">
-                            <span class="icon-search"><img src="./logWithMVC/public/images/Search.png"
-                                    alt="icon search"></span>
-                            <span class="search-food">Search Food</span>
-                        </div>
-        
-                        <!--Frame 29-->
-                        <button id="loginBtnframe29" class="frame29">
-                            <span class="icon-search"><img src="./logWithMVC/public/images/user.png"
-                                    alt="icon user"></span>
-                            <span class="login">Login</span>
-                        </button>
-        
-                    </div>
-        
-                </div>
-        
-        
-                <!--Header-->
-                <div class="header">
-
-                    <!--Background-->
-                    <div class="background-jaune">
-
-                        <!--Title + Order card-->
-                        <div class="title-order-card">
-                            <!--Title-->
-                            <div class="title">
-                                <h1>Are you starving?</h1>
-                                <p>Within a few clicks, find meals that are accessible near you</p>
-                            </div>
-                        
-                            <!--Order card-->
-                            <div class="order-card">
-                        
-                                <!--Top-->
-                                <div class="Top">
-                        
-                                    <!--Tab 1-->
-                                    <div class="tab">
-                                        <button class="tab1">
-                                            <span><img src="./logWithMVC/public/images/moto.png" alt="Icone moto"></span>
-                                            <span>Delivery</span>
-                                        </button>
-                                    
-                                        <!--Tab 2-->
-                                    
-                                        <button class="tab2">
-                                            <span><img src="./logWithMVC/public/images/sac.png" alt="Icone sac">Pickup</span>
-                                        </button>
-                                    </div>
-                                   
-                        
-                                </div>
-                        
-                        
-                                <!--HR-->
-                        
-                        
-                                <!--Bottom-->
-                                <div class="bottom">
-                                    <!--Text field + Button-->
-                                    <div class="text-field-button">
-                                        <!--Text field-->
-                                        <button class="text-field">
-                                            <span><img src="./logWithMVC/public/images/map.png" alt="Icone map"></span>
-                                            <input type="text" placeholder="Enter Your Address">
-                                        </button>
-                        
-                                        <!--Button-->
-                                        <button class="find-food-btn">
-                                            <span><img src="./logWithMVC/public/images/recherche.png" alt="Icone Search"> Find
-                                                Food</span>
-                                        </button>
-                        
-                                    </div>
-                                </div>
-                        
-                            </div>
-                        
-                        </div>
-                        
-                        <!--Image-->
-                        <div class="noodle">
-                            <img src="./logWithMVC/public/images/Image Base.png" alt="Nouilles">
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-        
-            </div>
-        
-        </header>
-
-
-       <?php  /*
-           include __DIR__ . '../static.php';*/
-        ?>
-
-
         <!--Flash deals-->
         <section class="flash-deal">
             <div class="flash-deal-container">
@@ -266,6 +120,7 @@
             </div>
         </section>
 
+
         <!--How it works-->
         <section class="how-it-works">
             <div class="container">
@@ -320,6 +175,9 @@
                 </div>
             </div>
         </section>
+
+
+
         
         <!--Popular items-->
         <section class="popular-items">
@@ -944,6 +802,8 @@
             </div>
         </section>
 
+
+
         <!--Search by Food + Features + App Download-->
         <section class="searchbyfood-features-appdownload-container">
         
@@ -1164,6 +1024,9 @@
             </div>
         
         </section>
+
+
+
 
         <!--Details-->
         <section class="details">
